@@ -1,0 +1,11 @@
+/* サイト全体のデザイン */
+body {
+    font-family: sans-serif; /* 読みやすいフォントにする */
+    text-align: center;      /* 全体を中央揃えにする */
+    margin-top: 50px;        /* 上部に少し余白をあける */
+}
+
+/* 特別な名札がついた文字のデザイン */
+.special-char {
+    color: #999; /* 文字の色を薄いグレーにする */
+}
