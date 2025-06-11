@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ゆっくりええAあんばいI</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+title: ホーム
+---
 
-    <h1>ゆっくりええ<span class="special-char">A</span>あんばい<span class="special-char">I</span></h1>
-    <p>このサイトは「ゆっくりええAあんばいI」をモットーに、のんびり作っていきます。見てくれてありがとう。</p>
-
-</body>
-</html>
+<h2>記事一覧</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span> - {{ post.date | date: "%Y年%m月%d日" }}</span>
+    </li>
+  {% endfor %}
+</ul>
