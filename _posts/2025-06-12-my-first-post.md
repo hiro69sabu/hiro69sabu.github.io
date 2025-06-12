@@ -10,3 +10,5 @@ title: "ゆっくりAIと会話をしていた結果"
   <source src="/video_generation1.mp4" type="video/mp4">
   お使いのブラウザは動画の再生に対応していません。
 </video>
+
+<p><small><em>この動画は「Google AI Studio (Veo)」で生成したものです。</em></small></p>
