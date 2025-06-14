@@ -2,10 +2,14 @@
 layout: post
 title: "ゆっくりAIと会話をしていた結果"
 ---
-<p><a href="https://aistudio.google.com/">Google AIスタジオ</a>で遊んでいたら、なんだかんだでサイトができてしまいました。</p>
-<p>ゆっくりのんびり、AIにお願いしていろいろ試せたらいいなー</p>
+
+<a href="https://aistudio.google.com/">Google AIスタジオ</a>で遊んでいたら、なんだかんだでサイトができてしまいました。
+
+ゆっくりのんびり、AIにお願いしていろいろ試せたらいいなー
+
 <video width="30%" controls>
   <source src="/video_generation1.mp4" type="video/mp4">
   お使いのブラウザは動画の再生に対応していません。
 </video>
+
 <p><small><em>この動画は「Google AI Studio (Veo)」で生成したものです。</em></small></p>
