@@ -1,11 +1,77 @@
-/* サイト全体のデザイン */
+/* --- サイト全体の基本設定 --- */
 body {
-    font-family: sans-serif; /* 読みやすいフォントにする */
-    text-align: center;      /* 全体を中央揃えにする */
-    margin-top: 50px;        /* 上部に少し余白をあける */
+    background-color: #faf8f0; /* 生成り色の背景 */
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
 }
 
-/* 特別な名札がついた文字のデザイン */
-.special-char {
-    color: #999; /* 文字の色を薄いグレーにする */
+/* --- コンテンツ全体を中央に配置するための大枠 --- */
+.wrapper {
+    max-width: 700px;  /* サイトの最大幅を700pxに設定（ここで調整可能） */
+    margin: 0 auto;    /* 上下は0, 左右は自動で中央揃えにする魔法 */
+    padding: 40px 20px;/* 内側の余白 */
+}
+
+/* --- ヘッダー（一番上のサイトタイトル） --- */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+header h1 {
+    font-size: 2em; /* 少しだけサイズ調整 */
+    margin: 0;
+}
+
+/* --- リンクの基本デザイン --- */
+a {
+    color: #0d47a1; /* 少し濃い、落ち着いた青色 */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ヘッダーのタイトルリンクだけは、特別に黒くする */
+header h1 a {
+    color: inherit;
+}
+
+/* --- トップページと記事ページの共通設定 --- */
+.home,
+article {
+    text-align: left; /* 文章は左揃えの方が読みやすい */
+}
+
+/* トップページの説明文 */
+.site-description {
+    text-align: center; /* 説明文だけは中央揃え */
+    margin-bottom: 40px;
+}
+
+/* トップページの記事一覧 */
+.posts ul {
+    list-style: none;
+    padding-left: 0;
+}
+.posts li {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.posts .post-date {
+    display: block;
+    color: #828282;
+    font-size: 0.9em;
+}
+
+/* 記事ページの中身 */
+article h2 {
+    text-align: center; /* 記事タイトルは中央揃え */
+}
+article video {
+    display: block; /* 動画をブロック要素にして中央揃えしやすくする */
+    margin: 20px auto; /* 上下に20px, 左右は自動で中央揃え */
 }
