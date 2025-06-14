@@ -1,11 +1,42 @@
-/* サイト全体のデザイン */
+/* サイト全体の基本設定 */
 body {
     background-color: #faf8f0;
     font-family: sans-serif;
-    text-align: center;
-    margin-top: 50px;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
 }
-/* 特別な名札がついた文字のデザイン */
-.special-char {
-    color: #999;
+
+/* コンテンツ全体を中央に配置するためのラッパー */
+.wrapper {
+    max-width: 800px;  /* コンテンツの最大幅 */
+    margin: 0 auto;    /* 上下は0, 左右は自動で中央揃えにする魔法 */
+    padding: 40px 20px;/* 上下に40px, 左右に20pxの余白 */
+}
+
+/* ヘッダー（サイトタイトル）のデザイン */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* トップページと記事ページの共通設定 */
+.home,
+.post {
+    text-align: center;
+}
+
+/* 動画のレスポンシブ対応 */
+video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
