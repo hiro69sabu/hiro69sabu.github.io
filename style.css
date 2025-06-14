@@ -1,90 +1,11 @@
-/* --- サイト全体の基本設定 --- */
+/* サイト全体のデザイン */
 body {
-    background-color: #faf8f0; /* 生成り色の背景 */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; /* モダンなフォント設定 */
-    color: #333333; /* 基本の文字色 */
-    line-height: 1.8; /* 行間を少し広げる */
-    margin: 0;
+    font-family: sans-serif; /* 読みやすいフォントにする */
+    text-align: center;      /* 全体を中央揃えにする */
+    margin-top: 50px;        /* 上部に少し余白をあける */
 }
 
-/* --- 全体を中央に寄せるための大枠 --- */
-.wrapper {
-    max-width: 800px;  /* サイトの最大幅 */
-    margin: 0 auto;    /* 上下は0, 左右は自動で中央揃えにする魔法 */
-    padding: 30px 20px;/* 内側の余白 */
-}
-
-/* --- ヘッダー（一番上のサイトタイトル） --- */
-header {
-    text-align: center;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #e0e0e0; /* 区切り線 */
-}
-header h1 {
-    font-size: 2.2em;
-    margin: 0;
-}
-
-/* --- リンクの基本デザイン --- */
-a {
-    color: #0056b3; /* 少し落ち着いた青色 */
-    text-decoration: none; /* 下線を消す */
-}
-a:hover {
-    text-decoration: underline; /* マウスを乗せたら下線を表示 */
-}
-
-/* ヘッダーのタイトルだけは、特別なリンク色にする */
-header h1 a {
-    color: inherit; /* 親要素の色（黒っぽい色）を継承 */
-}
-header h1 a:hover {
-    text-decoration: none; /* ヘッダーは下線不要 */
-}
-
-
-/* --- トップページと記事ページの共通設定 --- */
-.home, .post-content {
-    text-align: center; /* 中身を中央揃え */
-}
-
-/* トップページの説明文 */
-.site-description {
-    font-size: 1.1em;
-    margin-bottom: 40px;
-}
-
-/* トップページの記事一覧 */
-.posts ul {
-    list-style: none;
-    padding-left: 0;
-}
-.posts li {
-    margin-bottom: 25px;
-}
-.posts .post-date {
-    display: block;
-    color: #828282;
-    font-size: 0.9em;
-    margin-bottom: 5px;
-}
-.posts h3 {
-    margin: 0;
-    font-size: 1.4em;
-}
-
-/* 記事ページの中身 */
-.post-content h2 {
-    font-size: 1.8em;
-}
-.post-content video {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* 特別な文字（AとI）のデザイン */
+/* 特別な名札がついた文字のデザイン */
 .special-char {
-    color: #888; /* 少し濃いめのグレーに変更 */
+    color: #999; /* 文字の色を薄いグレーにする */
 }
