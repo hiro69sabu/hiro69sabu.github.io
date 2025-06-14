@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
+
 <div class="home">
+
   <p class="site-description">
-    {{ site.description | newline_to_br }}
+    {{ site.description }}
   </p>
+
   <hr>
+
   <div class="posts">
     <h2>記事一覧</h2>
     <ul>
@@ -19,4 +23,5 @@ layout: default
       {% endfor %}
     </ul>
   </div>
+
 </div>
