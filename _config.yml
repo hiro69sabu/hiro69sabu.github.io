@@ -1,27 +1,11 @@
----
-layout: default
----
+# サイトの基本設定
+title: ゆっくりええAんばいI
+description: |
+  田舎で、ちょっとだけお米を作ってのんびり暮らしております。
+  プログラムどころか、文字入力さえままならない。
+  そんなおじいちゃんがAIと会話をしていたら、なんだか、こんなサイトができてしまいました。
+  このサイトは「ゆっくりええAんばいI」をモットーにのんびり作っていきます。
+  見てくれて、本当にありがとう。
 
-<div class="home">
-
-  <p class="site-description">
-    {{ site.description | newline_to_br }}
-  </p>
-
-  <hr>
-
-  <div class="posts">
-    <h2>記事一覧</h2>
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <span class="post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
-          <h3>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-</div>
+# GitHub Pagesのテーマ設定
+theme: null
