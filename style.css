@@ -1,5 +1,6 @@
 /* サイト全体のデザイン */
 body {
+    background-color: #faf8f0; /* 生成り色（アイボリー）を追加 */
     font-family: sans-serif; /* 読みやすいフォントにする */
     text-align: center;      /* 全体を中央揃えにする */
     margin-top: 50px;        /* 上部に少し余白をあける */
