@@ -7,5 +7,6 @@ description: |
   このサイトは「ゆっくりええAんばいI」をモットーにのんびり作っていきます。
   見てくれて、本当にありがとう。
 
-# GitHub Pagesのテーマ設定
 theme: minima
+
+future: true
