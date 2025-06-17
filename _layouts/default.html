@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <style>
+    body { font-family: 'Yu Gothic', 'Meiryo', sans-serif; margin: 0; background: #fff; color: #222; }
+    header, footer { background: #f8f8f8; padding: 1em 2em; text-align: center; }
+    main { max-width: 700px; margin: 2em auto; padding: 1em; background: #fff; border-radius: 6px; box-shadow: 0 2px 8px #eee; }
+    h1 { margin: 0.2em 0; }
+    .site-description { color: #555; font-size: 1.1em; }
+    .posts h2 { font-size: 1.2em; }
+    .posts ul { list-style: none; padding: 0; }
+    .posts li { margin-bottom: 1.3em; }
+    .post-date { color: #888; font-size: 0.95em; }
+    a { color: #1c7ed6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border: none; border-top: 1px solid #eee; margin: 2em 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <div>
+      {{ site.title }}
+    </div>
+    <div style="font-size: 0.9em; color: #888;">{{ site.description }}</div>
+  </footer>
+</body>
+</html>
